@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thuispagina</title>
+  <title>Verken het park</title>
   <link href="StyleSheet.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="navbar">
     <div class="navbar-container">
@@ -17,37 +19,34 @@
         <li><a href="#Informatie">Informatie</a></li>
         <li><a href="#Review">Review</a></li>
         <li><a href="#Beheerdersysteem">Beheerdersysteem</a></li>
-        <li><a href="#Translatebutton"><img src="images/translatebutton.png"></a></li>
-        <li><a href="#Texttospeech"><img src="images/texttospeech.png"></a></li>
+        <li><a href="#Translatebutton" id="google_translate_element"></a></li>
+        <li><a href="#Texttospeech" id="textToSpeechBtn"><img src="images/texttospeech.png"></a></li>
       </ul>
     </div>
   </div>
-  
-  <div class="header">
-    <h1>Disneyland parijs</h1>
-    <p>Welkom op onze betoverende website over Disneyland Parijs!<br>Ontdek de magie met informatie voor een onvergetelijke ervaring.<br> Onderdompel jezelf in de prachtige sfeer, van kastelen tot shows. Veel plezier met verkennen!</p>
-  </div>
 
-    <div class="row">
-      <div class="column">
-        <img src="images/Castle.jpg">">
-      </div>
-        <div class="column">
-          <img src="images/mascot.jpeg">">
-        </div>
-          <div class="column">
-            <img src="images/mascot2.jpg">">
-          </div>
-          </div>
-    <div class="footer">
-      <p>
-        Contact Informatie:<br>
-        Email: contact@disney.com<br>
-        Phone: 020-7219362<br>
-        Address: Bd de Parc, 77700 Coupvray, Frankrijk
-
-      </p>
-    </div>
+<div class="header">
+  <h1>Plattegrond</h1>
+</div>
+<div class="grid">
+  <div>
+    <img id="plattegrond" src="images/plattegrond.jpg">
   </div>
+</div>
+<div>
+  <img id>
+</div>
+</div>
+<script src="script.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement(
+      {pageLanguage: 'nl'},
+      'google_translate_element'
+  );
+}
+</script>
 </body>
+
 </html>
