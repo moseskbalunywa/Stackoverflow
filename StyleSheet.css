@@ -1,4 +1,3 @@
-/* styles.css */
 .navbar-container {
   text-align: right;
   margin-right: 50px;
@@ -12,7 +11,7 @@
   left: 0px;
   top: 0px;
   font-family: Roboto Condensed;
-  text-align:center;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -35,9 +34,12 @@ li a {
 }
 
 li a img {
-  width: 30px; /* Adjust the width to your desired size */
-  height: auto; /* This keeps the aspect ratio while setting the width */
-  vertical-align: bottom; 
+  width: 30px;
+  /* Adjust the width to your desired size */
+  height: auto;
+  /* This keeps the aspect ratio while setting the width */
+  vertical-align: bottom;
+
 }
 
 
@@ -70,11 +72,46 @@ p {
   box-sizing: border-box;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: #4883BD;
+}
+#castle {
+  width: 125%;
+  height: 125%;
+  grid-column: 1 / 2;
+}
+
+#mascot {
+  width: 125%;
+  height: 125%;
+  grid-column: 2 / 3;
+}
+
+#mascot2 {
+  width: 125%;
+  height: 125%;
+  grid-column: 3 / 4;
+
+}
+
+#plattegrond {
+  width: 125%;
+  height: 125%;
+  grid-column: 4 / 5;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 300px;
   padding: 10px;
+  left: 8rem;
 }
 
 /* Clear floats after the columns */
@@ -85,11 +122,14 @@ p {
 }
 
 .footer {
-  position:   absolute;
-  bottom:      0;
-  height:     95px;
-  width:      100%;
+  position: absolute;
+  bottom: 0;
+  height: 95px;
+  width: 100%;
   text-align: center;
   background: #9C78E4;
   font-family: Open Sans;
+}
+#textToSpeechBtn {
+  cursor: pointer;
 }
