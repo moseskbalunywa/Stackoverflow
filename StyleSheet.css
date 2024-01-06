@@ -133,3 +133,12 @@ p {
 #textToSpeechBtn {
   cursor: pointer;
 }
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 50%;
+}
